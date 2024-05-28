@@ -8,6 +8,17 @@ resource "aws_vpc" "main" {
 
 provider "aws" {
   region = "us-east-1"
+
+  default_tags {
+    tags = {
+      # mandatory tags
+      Product        = "product01"
+      APM_functional = "functional123"
+      CIA            = "ciadoassado"
+
+    }
+  }
+
 }
 
 
