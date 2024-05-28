@@ -12,7 +12,7 @@ provider "aws" {
   default_tags {
     tags = {
       # mandatory tags
-      Product        = "product01"
+      Product        = "product02"
       APM_functional = "functional123"
       CIA            = "ciadoassado"
 
