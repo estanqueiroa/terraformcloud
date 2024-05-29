@@ -6,20 +6,20 @@
 #   }
 # }
 
-# provider "aws" {
-#   region = "us-east-1"
+provider "aws" {
+  region = "us-east-1"
 
-#   default_tags {
-#     tags = {
-#       # mandatory tags
-#       Product        = "product02"
-#       APM_functional = "functional123"
-#       CIA            = "ciadoassado"
+  default_tags {
+    tags = {
+      # mandatory tags
+      Product        = "product02"
+      APM_functional = "functional123"
+      CIA            = "ciadoassado"
 
-#     }
-#   }
+    }
+  }
 
-# }
+}
 
 
 # resource "aws_s3_bucket" "test" {
